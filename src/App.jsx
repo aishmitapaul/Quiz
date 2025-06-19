@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <AppContext.Provider value={{ player, setPlayer }}>
-      <HashRouter>
+      <HashRouter basename="/Quiz">
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
