@@ -1,6 +1,5 @@
 {
   "name": "quiz-reacted",
-  
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +8,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    
   },
   "dependencies": {
     "react": "^19.1.0",
