@@ -6,7 +6,7 @@ import QuizEngine from './components/QuizEngine'
 import ScoreSummary from './components/ScoreSummary'
 import Leaderboard from './components/Leaderboard'
 import AboutPage from './components/AboutPage'
-import quizImage from './assets/im.svg'; 
+
 
 
 
@@ -43,7 +43,9 @@ function Hero() {
           <button>Start Quiz</button>
         </a>
       </div>
-     <img src={quizImage} alt="Quiz" width="400" />
+      <div className="hero-image">
+     <img src="im.svg" alt="Quiz" width="400" />
+     </div>
     </div>
   )
 }
