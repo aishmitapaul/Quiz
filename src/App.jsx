@@ -6,6 +6,9 @@ import QuizEngine from './components/QuizEngine'
 import ScoreSummary from './components/ScoreSummary'
 import Leaderboard from './components/Leaderboard'
 import AboutPage from './components/AboutPage'
+import quizImage from './assets/im.svg'; 
+
+
 
 export const AppContext = React.createContext()
 
@@ -40,9 +43,7 @@ function Hero() {
           <button>Start Quiz</button>
         </a>
       </div>
-      <div className="hero-image">
-        <img src="/im.svg" alt="Quiz" width="400" />
-      </div>
+     <img src={quizImage} alt="Quiz" width="400" />
     </div>
   )
 }
