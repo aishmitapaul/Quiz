@@ -49,5 +49,6 @@ function Hero() {
      <img src={quizImage} alt="Quiz" width="400" />
      </div>
     </div>
-  )
+  );
+
 }
