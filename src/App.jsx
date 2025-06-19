@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import AddPlayerForm from './components/AddPlayerForm'
 import QuizEngine from './components/QuizEngine'
@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <AppContext.Provider value={{ player, setPlayer }}>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </AppContext.Provider>
   )
 }
